@@ -1,0 +1,137 @@
+html,
+body{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+}   
+.header{
+    height: 15%;
+    display: flex;
+    align-items: center;
+}
+.header > img{
+    max-height: 145px;
+}
+h1{
+    font-size: 38px;
+}
+.header > p{
+    margin-left: auto;
+    font-size: 22px;
+    font-weight: 500;
+}
+.header > button{
+    margin: 0 16px;
+    padding: 13px 21px;
+    border-radius: 360px;
+    border: black solid 1px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: bold;
+}
+.header > button:hover{
+    color: black;
+    background-color: white;
+}
+.body{
+    height: 85%;
+    background-image: url(../objects/pexels-rafael-cosquiere-2041540.jpg);
+    background-size: cover;
+    background-repeat: no-repeat ;
+    display: flex;
+    flex-direction: column;
+}
+h3{
+    text-align: center;
+    color: black;
+    font-size: 30px;
+}
+.card{
+    background-color: beige;
+    min-width: fit-content;
+    height: 110px;
+    padding: 26px 20px;
+    border-radius: 15px;
+    font-weight: 500;
+}
+.cards{
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    justify-items: start;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+dialog{
+    border-radius: 10px;
+}
+form{
+    font-family: inherit;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 45px 19px;
+}
+form div{
+    display: flex;
+    flex-direction: column;
+}
+form input{
+    height: 30px;
+    font-size: 16px;
+    padding-bottom: 3px;
+    border: none;
+    border-bottom: 2px black solid;
+}
+.checkbox{
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.buttons{
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+}
+.buttons > button{
+    border: black solid 1px;
+    color: white;
+    background-color: black;
+    padding: 7px 14px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 8px;
+}
+.buttons > button:nth-child(2){
+    color: black;
+    background-color: white;
+}
+::backdrop{
+    opacity: 0.8;
+    background-color: rgba(0, 0, 0, 0.527);
+}
+.removeBtn,
+.toggleBtn{
+    border: black solid 1px;
+    color: white;
+    background-color: black;
+    padding: 6px 13px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 12px;
+    border-radius: 8px;
+    margin-inline: 5px;
+    
+}
